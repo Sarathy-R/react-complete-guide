@@ -1,0 +1,54 @@
+/** GENERAL STYLES **/
+.expense-form,
+form {
+  display: flex;
+  flex-direction: column;
+}
+/** GENERAL STYLES **/
+
+form {
+  padding: 20px 10px;
+  border-radius: 15px;
+  background-color: slateblue;
+}
+
+form > div {
+  margin: 10px 0px;
+}
+.expense-form__control {
+  margin: 10px 10px;
+  align-items: center;
+  display: flex;
+}
+.expense-form__control label {
+  font-weight: bolder;
+  font-size: 25px;
+  color: white;
+}
+.expense-form__control input {
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+}
+.expense-form__control * {
+  margin: 0px 5px;
+}
+
+/** EXPENSE ACTIONS STTYLES**/
+.expense-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.expense-form__actions button {
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+/** EXPENSE ACTIONS STTYLES**/

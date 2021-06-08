@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+
+import NewExpense from "./components/NewExpense/NewExpense";
 import Expenses from "./components/Expenses/Expenses";
 
 function App() {
@@ -10,9 +12,16 @@ function App() {
     { id: 4, title: "Books", amount: 780, date: new Date(2021, 5, 23) },
   ];
 
+  /***PRIVATE METHODS */
+  const newExpenseHandler = (newExpenseData) => {
+    console.log("In app.js");
+    console.log(newExpenseData);
+  };
+  /***PRIVATE METHODS */
+
   return (
     <div>
-      <h1>Lets start</h1>
+      <NewExpense onNewExpense={newExpenseHandler} />
       <Expenses expenses={expenses}></Expenses>
     </div>
   );
